@@ -1,0 +1,257 @@
+#photowall .box .mybtn-blue {
+  border-radius: 10px;
+  border: none;
+  padding: 10px 15px;
+}
+
+#carousel .swiper {
+  width: 100%;
+  height: 768px;
+}
+
+#service {
+  padding: 96px 0 80px 0;
+}
+
+#service .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 96px;
+}
+
+#service h1 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+#service p {
+  text-align: center;
+  position: relative;
+  padding-bottom: 24px;
+  margin: 0px;
+  width: 700px;
+}
+
+#service p::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  -webkit-transform: -50%;
+          transform: -50%;
+  display: block;
+  width: 50px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: green;
+}
+
+#product .container-fluid {
+  max-width: 76% !important;
+}
+
+#product img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#product h2 {
+  margin-bottom: 12px;
+}
+
+#product p {
+  margin-bottom: 12px;
+}
+
+#product i {
+  margin-left: 8px;
+}
+
+#product button {
+  margin: 68px 0 96px 0;
+}
+
+#photowall {
+  margin-bottom: 96px;
+}
+
+#photowall .d-flex {
+  margin: 96px 0 80px 0;
+}
+
+#photowall .box {
+  width: 100%;
+  height: 300px;
+  border-radius: 0;
+  border: 1px solid #000;
+}
+
+#photowall .box .mybtn-blue {
+  background-color: blue;
+}
+
+#price {
+  margin-top: 96px;
+}
+
+#price .container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#price h1 {
+  text-align: center;
+}
+
+#price .container2 .line {
+  padding: 12px 0;
+  border-bottom: solid 3px #c2c2c2;
+}
+
+#price .container2 .line-1 {
+  border-bottom: none;
+}
+
+#price .container2 .connection {
+  padding: 12px 0 12px 15px;
+}
+
+#introduce h1 {
+  position: relative;
+}
+
+#introduce h1::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: green;
+}
+
+#prod .color-group {
+  margin-right: 5px;
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+#prod .color-group .color-radio {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#prod .color-group .color-radio:checked + .color-label {
+  opacity: 1;
+}
+
+#prod .color-group .color-radio::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+#prod .color-group .color-label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 19px;
+  height: 19px;
+  margin: 0;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+#prod #prod-swiper .swiper-pagination {
+  bottom: 0;
+}
+
+#prod #prod-swiper .swiper-pagination .swiper-pagination-bullet {
+  background-color: hotpink;
+  width: 15px;
+  height: 15px;
+}
+
+#prod #prod-swiper .swiper-button-prev, #prod #prod-swiper .swiper-button-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: green;
+  background-color: gray;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+#prod #prod-swiper .swiper-button-prev::after, #prod #prod-swiper .swiper-button-next::after {
+  font-size: 20px;
+}
+
+#map {
+  position: relative;
+}
+
+#map .container-fluid {
+  position: relative;
+  height: 650px;
+}
+
+#map .container-fluid .feedback {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 500px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: blanchedalmond;
+}
+
+#map .container-fluid .feedback button {
+  width: 100%;
+}
+
+#map iframe {
+  position: absolute;
+  top: 3rem;
+}
+/*# sourceMappingURL=index.css.map */

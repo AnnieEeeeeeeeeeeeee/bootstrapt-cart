@@ -1,0 +1,16 @@
+// 宣告常用變數
+$decoration-color: green;
+
+$px25: 25px;
+$px100: 100px;
+$px75: $px100 - $px25;
+
+$color-1: #010203;
+$color-2: #040506;
+$color-3: $color-1 + $color-2;  
+// 用%開頭的css不會被scss編譯出來，除非使用 @extend調用
+%mybtn {
+    border-radius: 10px;
+    border: none;
+    padding: 10px 15px;
+}

@@ -1,0 +1,26 @@
+footer {
+    .name img {
+        margin-right: 12px;
+        margin-bottom: 8px;
+    }
+    .footer-menu-box{
+        margin-left: 80px;      
+    }
+    .footer-menu {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            .footer-menu-item{
+                color: darkgray;
+                &:first-child {
+                    margin-bottom: 5px;
+                    color: black;
+                }
+            }
+    }
+    .community a {
+        color: #6b7280;
+        margin-left: 10px;
+    }
+}

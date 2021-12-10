@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 插件規模越大 放越上面 -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <!-- bootrapt core css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"/>
+    <!-- swiper 要放在自己寫的css的前面 -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/layout.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./logo.jpg" width="30" height="30" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>           
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="checkout1.html"><i class="fas fa-shopping-cart"></i></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-user-circle"></i>
+                    </a>                                    
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                      <a class="dropdown-item" href="./login.html">Login</a>  
+                    </div>
+                  </li>
+                </ul>
+              </div>
+        </div>
+      </nav>
+      <main>
+        <!-- 輪播區塊 -->
+          <section class="carousel">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://placeholder.pics/svg/1920x988" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://placeholder.pics/svg/1920x988" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://placeholder.pics/svg/1920x988" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </button>
+            </div>
+            <!-- swiper -->
+            <!-- Slider main container -->
+            <div class="swiper" id="carousel">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="https://placeholder.pics/svg/1920x988" class="d-block w-100" alt="...">
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://placeholder.pics/svg/1920x988" class="d-block w-100" alt="...">
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://placeholder.pics/svg/1920x988" class="d-block w-100" alt="...">
+                </div>
+                ...
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </section> 
+          <!-- 服務介紹 -->
+          <section id="service">
+            <div class="container">
+                  <h1>Raw Denim Heirloom Man Braid</h1>
+                  <p>Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.
+                  </p>
+            </div>          
+          </section>
+          <!-- 三個產品 -->
+          <section id="product">
+            <div class="container-fluid">
+              <div class="row">
+                  <div class="col-4 text-center">
+                    <img src="./logo.jpg" width="80" height="80" alt="">
+                    <h4>Shooting Stars</h4>
+                    <p>Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+                    <p>
+                        <a href="#">Learn More 
+                          <i class="far fa-arrow-right"></i>
+                        </a>  
+                    </p>
+                  </div>
+                  <div class="col-4 text-center">
+                    <img src="./logo.jpg" width="80" height="80" alt="">
+                    <h4>The Catalyzer</h4>
+                    <p>Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+                    <p>
+                        <a href="#">Learn More
+                          <i class="far fa-arrow-right"></i>
+                        </a>  
+                    </p>
+                  </div>
+                  <div class="col-4 text-center">
+                    <img src="./logo.jpg" width="80" height="80" alt="">
+                    <h4>Neptune</h4>
+                    <p>Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard.</p>
+                    <p>
+                        <a href="#">Learn More
+                          <i class="far fa-arrow-right"></i>
+                        </a>  
+                    </p>
+                  </div>    
+                </div>
+                <div class="cotainer">
+                    <div class="row justify-content-center">
+                         <button type="button" class="btn btn-primary">Button</button>  
+                    </div>                         
+                </div>
+              </div>   
+          </section>
+          <!-- 照片牆 -->
+          <section id="photowall">
+            <div class="container">
+              <div class="d-flex">
+                <h1 class="w-25">Master</h1>
+                <p class="w-75">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom.</p>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="box">
+                        <button class="mybtn-blue" data-aos="fade-out">按鈕</button>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="box"></div>
+                    </div>
+                    <div class="col-12">
+                      <div class="box"></div>
+                    </div>
+                  </div>         
+                </div>
+                <div class="col-6">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="box"></div>
+                    </div>
+                    <div class="col-6">
+                      <div class="box">
+                        <div id="scene">
+                          <div data-depth="0.2">My first Layer!</div>
+                          <div data-depth="0.6">My second Layer!</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="box"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>       
+            </div>    
+          </section>
+          <!-- 價格 -->
+          <section id="price">
+            <div class="container container1">
+              <h1>Pricing</h1>
+              <p>Banh mi cornhole echo park skateboard authentic crucifix neutra tilde lyft biodiesel artisan direct trade mumblecore 3 wolf moon twee</p>
+            </div>
+            <div class="container container2">
+              <div class="line line-1 row alert-secondary rounded">
+                  <div class="col-3">
+                    <div class="box">Plan</div>
+                  </div>
+                  <div class="col-3">
+                    <div class="box">Speed</div>
+                  </div>
+                  <div class="col-3">
+                    <div class="box">Storage</div>
+                  </div>
+                  <div class="col-3">
+                    <div class="box">Price</div>
+                </div>
+              </div>
+              <div class="line line-2 row">
+                <div class="col-3">
+                  <div class="box">Start</div>
+                </div>
+                <div class="col-3">
+                  <div class="box">5 Mb/s</div>
+                </div>
+                <div class="col-3">
+                  <div class="box">15 GB</div>
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-between">
+                  <div class="box">Free</div>
+                  <input type="radio">
+              </div>
+              </div>
+              <div class="line line-3 row">
+                <div class="col-3">
+                  <div class="box">Pro</div>
+                </div>
+                <div class="col-3">
+                  <div class="box">25 Mb/s</div>
+                </div>
+                <div class="col-3">
+                  <div class="box">25 GB</div>
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-between">
+                  <div class="box">$24</div>
+                  <input type="radio">
+              </div>
+              </div>
+              <div class="line line-4 row ">
+                <div class="col-3">
+                  <div class="box">Business</div>
+                </div>
+                <div class="col-3">
+                  <div class="box">36 Mb/s</div>
+                </div>
+                <div class="col-3">
+                  <div class="box">40 GB</div>
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-between">
+                  <div class="box">$50</div>
+                  <input type="radio">
+                </div>
+              </div>
+              <div class="line line-5 row ">
+                <div class="col-3">
+                  <div class="box">Exclusive</div>
+                </div>
+                <div class="col-3">
+                  <div class="box">48 Mb/s</div>
+                </div>
+                <div class="col-3">
+                  <div class="box">120 GB</div>
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-between">
+                  <div class="box">$72</div>
+                  <input type="radio">
+                </div>
+              </div>
+              <div class="connection d-flex justify-content-between row">
+                <a href="">Learn More <i class="far fa-arrow-right"></i>
+                </a>
+                <button class="btn btn-primary rounded">Button</button>
+              </div>
+            </div>
+          </section>
+          <!-- 介紹 -->
+          <section id="introduce">
+            <div class="contianer d-flex">
+              <h1>Pitchfork Kickstarter Taxidermy</h1>
+              <p>Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+            </div>
+          </section>
+          <!-- 商品 -->
+          <section id="prod" class="py-5">
+            <div class="container">
+              <div class="row mb-3">
+                <div class="col-5 offset-1" id="scene">
+                  <img class="w-100" data-depth="0.2" src="https://raw.githubusercontent.com/wagerfield/parallax/master/examples/assets/images/layer1.png" alt="">
+                  <img class="w-100" data-depth="1.2" src="https://github.com/wagerfield/parallax/blob/master/examples/assets/images/layer6.png?raw=true" alt="">
+                </div>
+                <form class="col-5" action="./index.html" method="get">
+                  <div class="hightlight-product-type">BRAND NAME</div>
+                  <div class="highlight-product-name">The Catcher in the Rye</div>
+                  <div class="highlight-product-review d-flex">
+                    <div class="five-star d-flex align-items-center">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="reviews mx-2">4 Reviews</div>
+                    <div class="share">
+                      <i class="fab fa-facebook-f"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fas fa-comment"></i>
+                    </div>
+                  </div>
+                  <p class="my-3"> 
+                    Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.
+                  </p>
+                  <div class="colorgroup d-flex align-items-center">
+                    <span class="mr-3">
+                      Color 
+                    </span>
+                    <div class="color-group">                   
+                      <input name="color" class="color-radio" type="radio" value="Red" id="red">             
+                      <label for="red" class="color-label" style="background-color:red;"></label> 
+                    </div>
+                    <div class="color-group"> 
+                      <input name="color" class="color-radio" type="radio" value="Green" id="green">   
+                      <label for="green" class="color-label" style="background-color: green;"></label>  
+                    </div>
+                    <div class="color-group">
+                       <input name="color" class="color-radio" type="radio" value="Blue" id="blue">
+                      <label for="blue" class="color-label" style="background-color: blue;"></label>
+                    </div>                                      
+                    <span class="mr-3 ml-4">
+                      Size
+                    </span>
+                    <select name="size" id="">                   
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                    </select>
+                  </div>                                    
+                  <hr>
+                  <button class="btn btn-primary" type="submit">add cart</button>
+                </form>
+              </div>     
+              <!--  -->
+              <div class="swiper" id="prod-swiper";>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img src="https://placeholder.pics/svg/600x400" class="card-img-top w-100" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img src="https://placeholder.pics/svg/600x400" class="card-img-top w-100" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img src="https://placeholder.pics/svg/600x400" class="card-img-top w-100" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img src="https://placeholder.pics/svg/600x400" class="card-img-top w-100" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card">
+                      <img src="https://placeholder.pics/svg/600x400" class="card-img-top w-100" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>                   
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+       
+          </section>
+       <!--地圖  -->
+       <section id="map" class="py-5">
+         <div class="container-fluid">
+           <div class="feedback">
+             <h3>feedback</h3>
+             <p>Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+             <form action="" method="get">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Message</label>
+                <textarea type="password"  class="form-control" name="" id="" cols="30" rows="5"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Button</button>
+              <p>Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
+              </form>
+           </div>
+         </div>          
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d14638.94027346001!2d120.94870021492876!3d23.470019038222762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z546J5bGx5ZyL5a625YWs5ZyS!5e0!3m2!1szh-TW!2stw!4v1638502251642!5m2!1szh-TW!2stw" width="100%" height="650px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>     
+       </section>
+        
+           
+        
+         
+          
+                       
+        
+      </main>
+      <footer>
+        <div class="py-5">
+          <div class="container">
+              <div class="row">
+                  <div class="col">
+                    <div class="name">
+                        <img src="./logo.jpg" width="40" height="40" alt="">
+                        <span>魔術方塊</span>
+                    </div>
+                    <p>Air plant banjo lyft occupy retro adaptogen indego</p>
+                  </div>
+                  <div class="col footer-menu-box">
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item">CATEGORIES</li>
+                        <li class="footer-menu-item">First Link</li>
+                        <li class="footer-menu-item">Second Link</li>
+                        <li class="footer-menu-item">Third Link</li>
+                        <li class="footer-menu-item">Fourth Link</li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item">CATEGORIES</li>
+                        <li class="footer-menu-item">First Link</li>
+                        <li class="footer-menu-item">Second Link</li>
+                        <li class="footer-menu-item">Third Link</li>
+                        <li class="footer-menu-item">Fourth Link</li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item">CATEGORIES</li>
+                        <li class="footer-menu-item">First Link</li>
+                        <li class="footer-menu-item">Second Link</li>
+                        <li class="footer-menu-item">Third Link</li>
+                        <li class="footer-menu-item">Fourth Link</li>
+                    </ul>                    
+                  </div>
+                  <div class="col">
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item">CATEGORIES</li>
+                        <li class="footer-menu-item">First Link</li>
+                        <li class="footer-menu-item">Second Link</li>
+                        <li class="footer-menu-item">Third Link</li>
+                        <li class="footer-menu-item">Fourth Link</li>
+                    </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="bg-light py-1">
+        <div class="container d-flex justify-content-between">
+            <div class="copyright">
+                © 2020 Tailblocks — @knyttneve
+            </div>
+            <div class="community">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>  
+    <!-- jquery core Js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- popper core JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <!-- bootstrap core JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>   
+    <!-- swiper core JS CDN-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- parallax -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> 
+    <!-- AOS CDN-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 輪播區塊 JS -->
+    <script src="./JS/swiper.js"></script>
+    <!-- aos自己寫 -->
+    <script src="./JS/AOS.js"></script>
+    <!-- p -->
+    <script src="JS/parallax.js"></script>
+  </body>
+</html>
